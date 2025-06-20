@@ -15,6 +15,8 @@ public class IncorrectReadWriteLockExample {
             System.out.println(Thread.currentThread().getName() + " is modifying data incorrectly.");
             sharedData++;
         } finally {
+            StringBuilder sb = new StringBuilder();
+            sb.append("Shared data: ");
             readLock.unlock();  // Releasing the read lock
         }
     }
