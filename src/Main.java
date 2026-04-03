@@ -1,3 +1,8 @@
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Map;
+import java.util.Set;
+
 class Animal {
     // Method to feed an animal
     public void feed() {
@@ -24,6 +29,13 @@ public class Main {
     public static void main(String[] args) {
         Animal genericAnimal = new Animal();
         Cat genericCat = new Cat();
+
+        Set<String> stringSet = new HashSet<>();
+
+        stringSet.add("Hello");
+
+        Map<String, Integer> stringIntegerMap = new HashMap<>();
+        stringIntegerMap.put("One", 1);
 
 //        BengalCat bengalCat = new BengalCat();
 //
